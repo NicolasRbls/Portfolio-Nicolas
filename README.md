@@ -240,13 +240,6 @@ Les contributions sont les bienvenues ! Pour contribuer :
 
 Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
 
-## 📞 Contact
-
-**Nicolas** - Développeur Front-End
-- Email : contact@nicolas.dev
-- Téléphone : +33 6 12 34 56 78
-- Portfolio : [https://nicolas-portfolio.vercel.app](https://nicolas-portfolio.vercel.app)
-
 ---
 
 ⭐ **N'hésitez pas à mettre une étoile si ce projet vous a plu !**
