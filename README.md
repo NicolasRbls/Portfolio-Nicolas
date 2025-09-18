@@ -42,38 +42,38 @@ Un portfolio moderne et élégant construit avec Next.js 14, TypeScript et Tailw
 
 ## 📁 Structure du Projet
 
-\`\`\`
+```bash
 portfolio-nicolas/
 ├── app/                    # App Router Next.js
-│   ├── globals.css        # Styles globaux et variables CSS
-│   ├── layout.tsx         # Layout principal avec fonts
-│   └── page.tsx           # Page d'accueil
-├── components/            # Composants React
-│   ├── layout/           # Composants de mise en page
-│   │   └── navbar.tsx    # Navigation principale
-│   ├── sections/         # Sections du portfolio
-│   │   ├── hero.tsx      # Section héro avec présentation
-│   │   ├── about.tsx     # Section à propos
-│   │   ├── projects.tsx  # Galerie de projets
-│   │   ├── skills.tsx    # Compétences techniques
-│   │   ├── contact.tsx   # Formulaire de contact
-│   │   └── footer.tsx    # Pied de page
-│   ├── theme/            # Gestion des thèmes
+│   ├── globals.css         # Styles globaux et variables CSS
+│   ├── layout.tsx          # Layout principal avec fonts
+│   └── page.tsx            # Page d'accueil
+├── components/             # Composants React
+│   ├── layout/             # Composants de mise en page
+│   │   └── navbar.tsx      # Navigation principale
+│   ├── sections/           # Sections du portfolio
+│   │   ├── hero.tsx        # Section héro avec présentation
+│   │   ├── about.tsx       # Section à propos
+│   │   ├── projects.tsx    # Galerie de projets
+│   │   ├── skills.tsx      # Compétences techniques
+│   │   ├── contact.tsx     # Formulaire de contact
+│   │   └── footer.tsx      # Pied de page
+│   ├── theme/              # Gestion des thèmes
 │   │   └── theme-provider.tsx
-│   └── ui/               # Composants UI réutilisables
+│   └── ui/                 # Composants UI réutilisables
 ├── src/
-│   ├── content/          # Données du site
-│   │   └── site.ts       # Configuration et contenu
-│   └── types/            # Types TypeScript
-│       └── site.ts       # Types pour les données
-├── public/               # Assets statiques
+│   ├── content/            # Données du site
+│   │   └── site.ts         # Configuration et contenu
+│   └── types/              # Types TypeScript
+│       └── site.ts         # Types pour les données
+├── public/                 # Assets statiques
 │   ├── CV de Nicolas Robles.pdf
 │   ├── modern-ecommerce-interface.png
 │   └── analytics-dashboard.png
-├── hooks/                # Hooks React personnalisés
-├── lib/                  # Utilitaires et helpers
-└── styles/               # Styles additionnels
-\`\`\`
+├── hooks/                  # Hooks React personnalisés
+├── lib/                    # Utilitaires et helpers
+└── styles/                 # Styles additionnels
+```
 
 ## 🚀 Installation et Démarrage
 
@@ -84,33 +84,33 @@ portfolio-nicolas/
 ### Installation
 
 1. **Cloner le repository**
-\`\`\`bash
+```bash
 git clone https://github.com/username/portfolio-nicolas.git
 cd portfolio-nicolas
-\`\`\`
+```
 
 2. **Installer les dépendances**
-\`\`\`bash
+```bash
 npm install
 # ou
 yarn install
 # ou
 pnpm install
-\`\`\`
+```
 
 3. **Lancer le serveur de développement**
-\`\`\`bash
+```bash
 npm run dev
 # ou
 yarn dev
 # ou
 pnpm dev
-\`\`\`
+```
 
 4. **Ouvrir dans le navigateur**
-\`\`\`
+```bash
 http://localhost:3000
-\`\`\`
+```
 
 ## 📝 Configuration
 
@@ -122,20 +122,20 @@ Modifiez le fichier `src/content/site.ts` pour personnaliser :
 - Compétences techniques
 - Informations de contact
 
-\`\`\`typescript
+```typescript
 export const site: SiteData = {
   name: "Votre Nom",
   role: "Votre Rôle",
   email: "votre@email.com",
   // ... autres configurations
 }
-\`\`\`
+```
 
 ### Ajout de Projets
 
 Pour ajouter un nouveau projet, ajoutez un objet dans le tableau `projects` dans le fichier `src/content/site.ts` :
 
-\`\`\`typescript
+```typescript
 {
   title: "Nom du Projet",
   description: "Description du projet",
@@ -144,20 +144,20 @@ Pour ajouter un nouveau projet, ajoutez un objet dans le tableau `projects` dans
   demo: "https://demo-url.com",
   repo: "https://github.com/username/repo",
 }
-\`\`\`
+```
 
 ### Personnalisation des Couleurs
 
 Les couleurs sont définies dans `app/globals.css` avec des variables CSS personnalisées :
 
-\`\`\`css
+```css
 :root {
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
   --primary: oklch(0.205 0 0);
   /* ... autres variables */
 }
-\`\`\`
+```
 
 ## 📱 Sections du Portfolio
 
@@ -211,13 +211,13 @@ Les animations sont gérées par Framer Motion avec :
 3. Analytics intégrées
 
 ### Autres Plateformes
-\`\`\`bash
+```bash
 # Build de production
 npm run build
 
 # Démarrage en production
 npm run start
-\`\`\`
+```
 
 ## 📊 Performance et SEO
 
