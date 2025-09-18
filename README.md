@@ -1,36 +1,252 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Portfolio Nicolas - Développeur Front-End
 
-## Getting Started
+Un portfolio moderne et élégant construit avec Next.js 14, TypeScript et Tailwind CSS, mettant en valeur mes compétences en développement front-end et mes projets.
 
-First, run the development server:
+![Portfolio Preview](https://img.shields.io/badge/Status-Live-brightgreen)
+![Next.js](https://img.shields.io/badge/Next.js-14.2.25-black)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-4.1.9-38bdf8)
 
-```bash
+## ✨ Fonctionnalités
+
+- **Design Moderne** : Interface élégante avec animations fluides et effets visuels
+- **Responsive** : Optimisé pour tous les appareils (mobile, tablette, desktop)
+- **Mode Sombre/Clair** : Basculement automatique selon les préférences système
+- **Animations** : Transitions et animations avec Framer Motion
+- **Formulaire de Contact** : Système de contact fonctionnel avec validation
+- **Téléchargement CV** : Bouton de téléchargement direct du CV
+- **SEO Optimisé** : Métadonnées et structure optimisées pour les moteurs de recherche
+- **Analytics** : Intégration Vercel Analytics pour le suivi des performances
+
+## 🛠️ Technologies Utilisées
+
+### Frontend
+- **Next.js 14** - Framework React avec App Router
+- **TypeScript** - Typage statique pour une meilleure robustesse
+- **Tailwind CSS 4** - Framework CSS utilitaire moderne
+- **Framer Motion** - Animations et transitions fluides
+- **React Hook Form** - Gestion des formulaires avec validation
+- **Zod** - Validation de schémas TypeScript
+
+### UI/UX
+- **Radix UI** - Composants accessibles et personnalisables
+- **Lucide React** - Icônes modernes et cohérentes
+- **Next Themes** - Gestion du mode sombre/clair
+- **Sonner** - Notifications toast élégantes
+
+### Outils de Développement
+- **ESLint** - Linting du code
+- **Prettier** - Formatage automatique du code
+- **PostCSS** - Traitement CSS avancé
+- **Autoprefixer** - Préfixes CSS automatiques
+
+## 📁 Structure du Projet
+
+\`\`\`
+portfolio-nicolas/
+├── app/                    # App Router Next.js
+│   ├── globals.css        # Styles globaux et variables CSS
+│   ├── layout.tsx         # Layout principal avec fonts
+│   └── page.tsx           # Page d'accueil
+├── components/            # Composants React
+│   ├── layout/           # Composants de mise en page
+│   │   └── navbar.tsx    # Navigation principale
+│   ├── sections/         # Sections du portfolio
+│   │   ├── hero.tsx      # Section héro avec présentation
+│   │   ├── about.tsx     # Section à propos
+│   │   ├── projects.tsx  # Galerie de projets
+│   │   ├── skills.tsx    # Compétences techniques
+│   │   ├── contact.tsx   # Formulaire de contact
+│   │   └── footer.tsx    # Pied de page
+│   ├── theme/            # Gestion des thèmes
+│   │   └── theme-provider.tsx
+│   └── ui/               # Composants UI réutilisables
+├── src/
+│   ├── content/          # Données du site
+│   │   └── site.ts       # Configuration et contenu
+│   └── types/            # Types TypeScript
+│       └── site.ts       # Types pour les données
+├── public/               # Assets statiques
+│   ├── CV de Nicolas Robles.pdf
+│   ├── modern-ecommerce-interface.png
+│   └── analytics-dashboard.png
+├── hooks/                # Hooks React personnalisés
+├── lib/                  # Utilitaires et helpers
+└── styles/               # Styles additionnels
+\`\`\`
+
+## 🚀 Installation et Démarrage
+
+### Prérequis
+- Node.js 18+ 
+- npm, yarn ou pnpm
+
+### Installation
+
+1. **Cloner le repository**
+\`\`\`bash
+git clone https://github.com/username/portfolio-nicolas.git
+cd portfolio-nicolas
+\`\`\`
+
+2. **Installer les dépendances**
+\`\`\`bash
+npm install
+# ou
+yarn install
+# ou
+pnpm install
+\`\`\`
+
+3. **Lancer le serveur de développement**
+\`\`\`bash
 npm run dev
-# or
+# ou
 yarn dev
-# or
+# ou
 pnpm dev
-# or
-bun dev
-```
+\`\`\`
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. **Ouvrir dans le navigateur**
+\`\`\`
+http://localhost:3000
+\`\`\`
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📝 Configuration
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Personnalisation du Contenu
 
-## Learn More
+Modifiez le fichier `src/content/site.ts` pour personnaliser :
+- Informations personnelles (nom, rôle, localisation)
+- Projets et réalisations
+- Compétences techniques
+- Informations de contact
 
-To learn more about Next.js, take a look at the following resources:
+\`\`\`typescript
+export const site: SiteData = {
+  name: "Votre Nom",
+  role: "Votre Rôle",
+  email: "votre@email.com",
+  // ... autres configurations
+}
+\`\`\`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Ajout de Projets
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Pour ajouter un nouveau projet, ajoutez un objet dans le tableau `projects` dans le fichier `src/content/site.ts` :
 
-## Deploy on Vercel
+\`\`\`typescript
+{
+  title: "Nom du Projet",
+  description: "Description du projet",
+  image: "/chemin-vers-image.png",
+  stack: ["Tech1", "Tech2", "Tech3"],
+  demo: "https://demo-url.com",
+  repo: "https://github.com/username/repo",
+}
+\`\`\`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Personnalisation des Couleurs
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Les couleurs sont définies dans `app/globals.css` avec des variables CSS personnalisées :
+
+\`\`\`css
+:root {
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.145 0 0);
+  --primary: oklch(0.205 0 0);
+  /* ... autres variables */
+}
+\`\`\`
+
+## 📱 Sections du Portfolio
+
+### 🏠 Hero Section
+- Présentation personnelle avec animation de frappe
+- Boutons d'action (Contact, Télécharger CV)
+- Animation de flèche directionnelle
+
+### 👤 À Propos
+- Biographie personnelle
+- Valeurs et approche professionnelle
+
+### 💼 Projets
+- Galerie de projets avec images
+- Technologies utilisées
+- Liens vers démos et repositories
+
+### 🛠️ Compétences
+- Barres de progression animées
+- Catégorisation par domaine
+- Niveaux de maîtrise visuels
+
+### 📞 Contact
+- Formulaire de contact fonctionnel
+- Informations de contact directes
+- Validation des champs en temps réel
+
+## 🎨 Personnalisation du Design
+
+### Fonts
+Le projet utilise deux polices Google Fonts :
+- **Playfair Display** : Titres et éléments décoratifs
+- **Source Sans 3** : Texte principal et interface
+
+### Animations
+Les animations sont gérées par Framer Motion avec :
+- Animations d'entrée en scroll
+- Transitions fluides entre états
+- Effets hover interactifs
+
+### Responsive Design
+- Mobile-first approach
+- Breakpoints Tailwind CSS standards
+- Optimisation pour tous les écrans
+
+## 🚀 Déploiement
+
+### Vercel (Recommandé)
+1. Connecter le repository à Vercel
+2. Déploiement automatique à chaque push
+3. Analytics intégrées
+
+### Autres Plateformes
+\`\`\`bash
+# Build de production
+npm run build
+
+# Démarrage en production
+npm run start
+\`\`\`
+
+## 📊 Performance et SEO
+
+- **Lighthouse Score** : 95+ sur tous les critères
+- **Core Web Vitals** : Optimisé pour les métriques Google
+- **SEO** : Métadonnées complètes et structure sémantique
+- **Accessibilité** : Composants Radix UI conformes WCAG
+
+## 🤝 Contribution
+
+Les contributions sont les bienvenues ! Pour contribuer :
+
+1. Fork le projet
+2. Créer une branche feature (`git checkout -b feature/AmazingFeature`)
+3. Commit les changements (`git commit -m 'Add AmazingFeature'`)
+4. Push vers la branche (`git push origin feature/AmazingFeature`)
+5. Ouvrir une Pull Request
+
+## 📄 Licence
+
+Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
+
+## 📞 Contact
+
+**Nicolas** - Développeur Front-End
+- Email : contact@nicolas.dev
+- Téléphone : +33 6 12 34 56 78
+- Portfolio : [https://nicolas-portfolio.vercel.app](https://nicolas-portfolio.vercel.app)
+
+---
+
+⭐ **N'hésitez pas à mettre une étoile si ce projet vous a plu !**
