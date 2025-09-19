@@ -10,7 +10,7 @@ export const site: SiteData = {
   email: "nicolasalexrobles@gmail.com",
   phone: "+33 6 51 72 16 29",
   about : "Découvrez mon parcours et ma passion pour le développement et l'administration système.",
-  pdp : "/professional-developer-portrait.png",
+  pdp : "/professional-portrait.jpg",
   projects: [
     {
       title: "E-commerce Platform",
