@@ -45,11 +45,11 @@ export function Projects() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   <div className="absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     <div className="flex gap-2">
-                      <Button size="sm" variant="secondary">
+                      <Button size="sm" variant="secondary" onClick={() => window.open(project.demo, "_blank")}>
                         <ExternalLink className="h-4 w-4 mr-1" />
                         Demo
                       </Button>
-                      <Button size="sm" variant="outline">
+                      <Button size="sm" variant="outline" onClick={() => window.open(project.repo, "_blank")}>
                         <Github className="h-4 w-4 mr-1" />
                         Code
                       </Button>
