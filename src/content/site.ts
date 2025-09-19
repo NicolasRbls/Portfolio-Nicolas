@@ -25,7 +25,7 @@ export const site: SiteData = {
       description: "HealthyCore est une application mobile de santé et de fitness développée avec React Native et Expo. Elle permet aux utilisateurs de suivre leurs objectifs de santé, gérer leur alimentation et leurs activités physiques, tout en fournissant des recommandations personnalisées basées sur leur profil.",
       image: "/project-Healthycore.png",
       stack: ["React Native", "Expo", "Node.js", "PostgreSQL", "TypeScript", "Prisma"],
-      demo: "https://demo2.example.com",
+      demo: "/no-demo",
       repo: "https://github.com/NicolasRbls/HealthyCore",
     },
   ],

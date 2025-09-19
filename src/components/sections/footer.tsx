@@ -33,7 +33,7 @@ export function Footer() {
               <Github className="h-5 w-5" />
             </a>
             <a
-              href="#"
+              href="https://www.linkedin.com/in/nicolas-robles-b01a84365/"
               className="w-10 h-10 bg-card rounded-lg flex items-center justify-center hover:bg-secondary hover:text-secondary-foreground transition-colors"
             >
               <Linkedin className="h-5 w-5" />
