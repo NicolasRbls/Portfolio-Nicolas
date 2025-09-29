@@ -19,8 +19,8 @@ const sourceSans = Source_Sans_3({
 })
 
 export const metadata: Metadata = {
-  title: "Nicolas - Développeur Front-End",
-  description: "Portfolio de Nicolas, développeur front-end passionné par les interfaces élégantes et modernes",
+  title: "Nicolas - Développeur / Admin Système",
+  description: "Portfolio de Nicolas, développeur et administrateur système passionné par l'innovation et l'excellence.",
   generator: "v0.app",
 }
 
