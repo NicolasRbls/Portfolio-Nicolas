@@ -2,7 +2,7 @@
 
 Un portfolio moderne et élégant construit avec Next.js 14, TypeScript et Tailwind CSS, mettant en valeur mes compétences en développement front-end et mes projets.
 
-![Portfolio Preview](https://img.shields.io/badge/Status-Live-brightgreen)
+[![Status](https://img.shields.io/badge/Status-Live-brightgreen)](https://portfolio-nicolas-robles.netlify.app/)       
 ![Next.js](https://img.shields.io/badge/Next.js-14.2.25-black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-4.1.9-38bdf8)
